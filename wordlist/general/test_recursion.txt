@@ -1,0 +1,3 @@
+admin
+CVS
+cgi-bin
