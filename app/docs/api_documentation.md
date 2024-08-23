@@ -50,7 +50,7 @@ This API provides a set of endpoints for fuzzing various aspects of web applicat
 - **Description**: Performs recursive fuzzing, starting from a base set of directories and recursively fuzzing deeper into discovered directories. This is useful for finding hidden directories and files within a web application.
 - **Request Body**:
   - `url`: The base URL to start fuzzing (default: `"http://testphp.vulnweb.com/FUZZ"`). The `FUZZ` placeholder is automatically adjusted.
-  - `list`: Comma-separated list of directory names to start with (default: `"admin-CVS-cgi\\-bin"`).
+  - `wordlist`: Path to the wordlist file to use for fuzzing (default: `"wordlist/general/test_recursion.txt"`).
   - `recursion_depth`: The depth of recursion for fuzzing (default: `1`).
   - `cookies`: Optional list of cookies to include in the request (e.g., `["sessionid=abc123"]`).
   - `headers`: Optional list of headers to include in the request (e.g., `["Authorization: Bearer token"]`).
@@ -60,7 +60,7 @@ This API provides a set of endpoints for fuzzing various aspects of web applicat
 - **Description**: Fuzzes different HTTP verbs on the target URL.
 - **Request Body**:
   - `url`: The URL to fuzz with different HTTP verbs.
-  - `verb_list`: Path to the wordlist for form fuzzing (default: `"wordlist/general/http_methods.txt"`).
+  - `wordlist`: Path to the wordlist for form fuzzing (default: `"wordlist/general/http_methods.txt"`).
   - `cookies`: Optional list of cookies to include in the request.
   - `headers`: Optional list of headers to include in the request.
 - **Response**: JSON object with the fuzzing results.
