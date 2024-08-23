@@ -17,7 +17,7 @@ developers. To guarantee accessibility, the framework comes with a simple API an
 
 ### dot-env(.env) Structure
 LOG_FILE_NAME = "fuzzer.log"<br>
-DEFAULT_URL = "https://example.com/FUZZ"<br>
+DEFAULT_URL = "some/url/FUZZ"<br>
 DEFAULT_WORDLIST = "wordlist/test.txt"<br>
 DEFAULT_SQL_WORDLIST = "wordlist/Injections/SQL.txt"<br>
 DEFAULT_XSS_WORDLIST = "wordlist/Injections/XSS.txt"<br>
